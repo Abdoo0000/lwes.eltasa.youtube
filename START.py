@@ -1,13 +1,34 @@
-import os 
-os.system ("clear")
-print ("\033[0;31m ################")
-print ("\033[0;32m L  W  E  S              ")
-print ("\033[0;33m E  L  T  A  S  A      ")
-print ("\033[0;34m E  L  K  B  E  R      ")
-print ("\033[0;33m ################")
 import webbrowser
+import os
+os.system ("clear")
 import time
-n = input("\033[0;31m inter-the-url: ")
-m = 0
-while m < 100 :
-	webbrowser.open(n)
+print ("\033[0;31m |____________________|")
+print ("\033[0;32m |                    |")
+print ("\033[0;33m |   LWES             |")
+print ("\033[0;34m |                    |")
+print ("\033[0;35m |                    |")
+print ("\033[0;37m |       ELTASA       |")
+print ("\033[0;37m |                    |")
+print ("\033[0;38m |                    |")
+print ("\033[0;39m |                    |")
+print ("\033[0;31m |             ELKBER |")
+print ("\033[0;32m |    01283494514     |")
+print ("\033[0;33m |____________________|")
+
+
+
+url =  input("Enter the video url ")
+
+refreshrate = input("Enter the refresh rate in seconds")
+
+browserr = input("Enter your default browser name")
+
+
+def letsdoit():
+    os.system("TASKKILL /F /IM "+browserr+".exe")
+    webbrowser.open(url)
+    time.sleep(int(refreshrate))
+
+views = input("How many views you want")
+for i in range(int(views)+1):
+    letsdoit()
