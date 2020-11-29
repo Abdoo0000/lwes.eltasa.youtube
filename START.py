@@ -38,7 +38,7 @@ browserr = input("Enter your default browser name")
 
 
 def letsdoit():
-    os.system("TASKKILL /F /IM "+browserr+".exe")
+    os.system("TASKKILL /F /IM "+browserr+".com")
     webbrowser.open(url)
     time.sleep(int(refreshrate))
 
